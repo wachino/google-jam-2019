@@ -6,31 +6,32 @@ const rl = readline.createInterface({
   crlfDelay: Infinity
 });
 
-async function* getGenerator() {
-  for await (const line of rl) {
-    yield line;
-  }
+async function ask(q = '') {
+  return new Promise(solve => {
+    rl.question(q, response => solve(response));
+  });
 }
-const generator = getGenerator();
-
-async function solve() {
-  let line = await generator.next();
-  const t = Number(line.value);
+/* rl.on('line', function(cmd) {
+  debugger;
+  console.log('You just typed: ' + cmd);
+});
+ */
+rl.question('', async firstLine => {
+  const t = Number(firstLine);
   for (let i = 0; i < t; i++) {
-    line = await generator.next();
-    let [N, B, F] = line.value
+    let caseInfo = await ask();
+    let [N, B, F] = caseInfo
       .trim()
       .split(' ')
       .map(Number);
 
     const answer = await findAnswer(N, B);
-    console.log(answer.join(' '));
-    line = await generator.next();
-    let veredict = Number(line.value);
+
+    let veredict = await ask(answer.join(' ') + '\n');
   }
   rl.close();
   process.stdin.destroy();
-}
+});
 
 async function findAnswer(n, b) {
   const nums = Array(n)
@@ -38,9 +39,8 @@ async function findAnswer(n, b) {
     .map((_, i) => i % 32);
   let ans = Array(n - b).fill(0);
   for (let i = 4; i >= 0; i--) {
-    console.log(nums.map(d => (d & (1 << i) ? 1 : 0)).join(''));
-    let tmp = await generator.next();
-    tmp = tmp.value.split('').map(Number);
+    let tmp = await ask(nums.map(d => (d & (1 << i) ? 1 : 0)).join('') + '\n');
+    tmp = tmp.split('').map(Number);
     ans = ans.map((d, a) => (d << 1) | tmp[a]);
   }
   const ret = [];
@@ -57,5 +57,3 @@ async function findAnswer(n, b) {
   }
   return ret;
 }
-
-solve();
