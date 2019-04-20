@@ -55,7 +55,7 @@ Memory limit: 1GB.<br>
 
 ## Testing Tool
 
-You can use this testing tool to test locally or on our servers. To test locally, you will need to run the tool in parallel with your code; you can use our [interactive runner](https://storage.googleapis.com/coding-competitions.appspot.com/interactive_runner.py) for that. For more information, read the Interactive Problems section of the [FAQ](https://codingcompetitions.withgoogle.com/codejam/faq).
+You can use this testing tool to test locally or on our servers. To test locally, you will need to run the tool in parallel with your code; you can use our [interactive runner](/Qualification%20Round/Dat%20Bae/interactive_runner.py) for that. For more information, read the Interactive Problems section of the [FAQ](https://codingcompetitions.withgoogle.com/codejam/faq).
 
 ## Local Testing Tool
 
