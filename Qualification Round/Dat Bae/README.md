@@ -1,5 +1,9 @@
 # Dat Bae
 
+## Solution code
+
+See [solution source code](/Qualification%20Round/Dat%20Bae/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Qualification%20Round/Dat%20Bae/analysis.md) extracted from Google webpage.

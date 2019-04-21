@@ -2,9 +2,9 @@
 
 ## Problems
 
-- [Alien Rhyme](/Round%201A/Alien%20Rhyme/README.md)
-- [Golf Gophers](/Round%201A/Golf%20Gophers/README.md)
-- [Pylons](/Round%201A/Pylons/README.md)
+- [Pylons](/Round%201A/Pylons)
+- [Golf Gophers](/Round%201A/Golf%20Gophers)
+- [Alien Rhyme](/Round%201A/Alien%20Rhyme)
 
 ## Contest results
 

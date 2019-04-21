@@ -1,5 +1,9 @@
 # Foregone Solution
 
+## Solution code
+
+See [solution source code](/Qualification%20Round/Foregone%20Solution/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Qualification%20Round/Foregone%20Solution/analysis.md) extracted from Google webpage.

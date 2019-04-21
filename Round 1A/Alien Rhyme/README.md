@@ -1,5 +1,9 @@
 # Alien Rhyme
 
+## Solution code
+
+See [solution source code](/Round%201A/Alien%20Rhyme/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%201A/Alien%20Rhyme/analysis.md) extracted from Google webpage.

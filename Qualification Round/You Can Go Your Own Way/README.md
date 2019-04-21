@@ -1,5 +1,9 @@
 # You Can Go Your Own Way
 
+## Solution code
+
+See [solution source code](/Qualification%20Round/You%20Can%20Go%20Your%20Own%20Way/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Qualification%20Round/You%20Can%20Go%20Your%20Own%20Way/analysis.md) extracted from Google webpage.

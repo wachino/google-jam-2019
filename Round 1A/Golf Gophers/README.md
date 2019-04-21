@@ -1,5 +1,9 @@
 # Golf Gophers
 
+## Solution code
+
+See [solution source code](/Round%201A/Golf%20Gophers/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%201A/Golf%20Gophers/analysis.md) extracted from Google webpage.
