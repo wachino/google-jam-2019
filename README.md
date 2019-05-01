@@ -4,10 +4,14 @@ This project contains the solutions for [Google Code Jam competition 2019](https
 
 ## Qualification Round 2019
 
-- [Solutions](/Qualification%20Round)
+- [Problem statements and solutions](/Qualification%20Round)
 
 ## Round 1
 
 ### Round 1A
 
-- [Solutions](/Round%201A)
+- [Problem statements and solutions](/Round%201A)
+
+### Round 1B
+
+- [Problem statements and solutions](/Round%201B)
