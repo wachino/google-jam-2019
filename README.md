@@ -15,3 +15,7 @@ This project contains the solutions for [Google Code Jam competition 2019](https
 ### Round 1B
 
 - [Problem statements and solutions](/Round%201B)
+
+### Round 1C
+
+- [Problem statements and solutions](/Round%201C)
