@@ -9,4 +9,4 @@
 ## Contest results
 
 - [Link to my submissions](https://codingcompetitions.withgoogle.com/codejam/submissions/00000000000516b9/d2FjaGlubw)
-- Ranking position: 467
+- Ranking position: 464

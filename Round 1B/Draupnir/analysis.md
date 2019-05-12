@@ -4,9 +4,9 @@ In this problem, we need to determine the number of each type of X-day ring by q
 
 Let R<sub>1</sub> be the number of 1-day rings, R<sub>2</sub> be the number of 2-day rings, ... etc. at the end of day 0. The number of X-day rings doubles at the end of every day that is a multiple of X. Thus, the total number of rings on day i is
 
-```
+<code>
     R<sub>1</sub>*2<sup>i</sup> + R<sub>2</sub>*2<sup>floor(i/2)</sup> + R<sub>3</sub>*2<sup>floor(i/3)</sup> + R<sub>4</sub>*2<sup>floor(i/4)</sup> + R<sub>5</sub>*2<sup>floor(i/5)</sup> + R<sub>6</sub>*2<sup>floor(i/6)</sup>.
-```
+</code>
 
 ## Test set 1
 
@@ -26,21 +26,22 @@ Let's think about what information we get by querying day 189 (=3*63). This give
 
 We must use the fact that R<sub>i</sub> ≤ 100. In order for the number of i-day rings to not interfere with the number of (i-1)-day rings on day d, we need 2<sup>floor(d/(i-1))</sup> > 100 * 2<sup>floor(d/i)</sup> (note that this is equivalent to floor(d/(i-1)) ≥ floor(d/i)+7 since 2<sup>7</sup> > 100). If we ignore the modulo 2<sup>63</sup> restriction, then we could solve the question in a single query of (for example) 1000. This would give us
 
-```
+<code>
     R<sub>1</sub>*2<sup>1000</sup> + R<sub>2</sub>*2<sup>500</sup> + R<sub>3</sub>*2<sup>333</sup> + R<sub>4</sub>*2<sup>250</sup> + R<sub>5</sub>*2<sup>200</sup> + R<sub>6</sub>*2<sup>166</sup>.
-```
+</code>
 
 Since R<sub>i</sub> ≤ 100, we coud determine R<sub>6</sub> by taking this value modulo 2<sup>200</sup> to get R<sub>6</sub> * 2<sup>166</sup>, then by dividing by 2<sup>166</sup>. We then could iteratively determine R<sub>5</sub>, R<sub>4</sub>, ..., R<sub>1</sub>. However, this idea does not work since the problem is modulo 2<sup>63</sup>. There is no single query that can give us all of the information we need, modulo 2<sup>63</sup>.<br>
 We will use one query to determine the values of R<sub>4</sub>, R<sub>5</sub>, and R<sub>6</sub>, followed by a second query to determine the values of R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub>. We saw above that a query of 189 (=3 * 63) will not work. However, a query of (for example) 200 will work:
 
-```
+<code>
     R<sub>4</sub>*250 + R<sub>5</sub>*240 + R<sub>6</sub>*233,
-```
+</code>
 
 and then solve for each in the same way as for the 1000 case. We can then make a second query of (for example) 56:
-```
+
+<code>
     R<sub>1</sub> * 2<sup>56</sup> + R<sub>2</sub> * 2<sup>28</sup> + R<sub>3</sub> * 2<sup>18</sup> + R<sub>4</sub> * 2<sup>14</sup> + R<sub>5</sub> * 2<sup>11</sup> + R<sub>6</sub> * 2<sup>9</sup>.
-```
+</code>
 
 We know the value of R<sub>4</sub>, R<sub>5</sub>, and R<sub>6</sub> from the first step, so we may substitute those in and then solve for R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub> one-by-one.
 
