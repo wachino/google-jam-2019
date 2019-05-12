@@ -32,66 +32,29 @@ async function solve() {
 }
 
 async function processTestCase() {
-  let positions = [];
-  let firstLetter = {
-    A: 0,
-    B: 0,
-    C: 0,
-    D: 0,
-    E: 0
-  };
-
-  let sol = '';
-  let leter;
-  for (let i = 0; i < 119; i++) {
-    console.log(i * 5 + 1);
-    letter = await readLine();
-    firstLetter[letter]++;
-    positions.push({ p: i * 5 + 1, letter });
-  }
-  let candidate = ['A', 'B', 'C', 'D', 'E'].find(c => firstLetter[c] === 23);
-  sol = sol + candidate;
-
-  firstLetter = {
-    A: 0,
-    B: 0,
-    C: 0,
-    D: 0,
-    E: 0
-  };
-  positions = positions.filter(p => p.letter === candidate);
+  const allPowerArrangers = ['A', 'B', 'C', 'D', 'E'];
+  let countFirstLetter = {};
+  let positions = Array(120)
+    .fill(0)
+    .map((_, id) => ({ p: id * 5 }));
   let next = [];
-  for (let i = 0; i < 23; i++) {
-    let pos = positions[i].p;
-    console.log(pos + 1);
-    letter = await readLine();
-    firstLetter[letter]++;
-    next.push({ p: pos + 1, letter });
+  let totalComb = 120;
+  let sol = '';
+  for (let j = 5; j > 0; j--) {
+    next = [];
+    countFirstLetter = {};
+    allPowerArrangers.filter(p => !sol.includes(p)).forEach(p => (countFirstLetter[p] = 0));
+    for (let i = 0; i < totalComb - 1; i++) {
+      let pos = positions[i].p;
+      console.log(pos + 1);
+      letter = await readLine();
+      countFirstLetter[letter]++;
+      next.push({ p: pos + 1, letter });
+    }
+    totalComb /= j;
+    candidate = allPowerArrangers.find(c => countFirstLetter[c] === totalComb - 1);
+    sol += candidate;
+    positions = next.filter(p => p.letter === candidate);
   }
-
-  candidate = ['A', 'B', 'C', 'D', 'E'].find(c => firstLetter[c] === 5);
-  sol = sol + candidate;
-  positions = [];
-  firstLetter = {
-    A: 0,
-    B: 0,
-    C: 0,
-    D: 0,
-    E: 0
-  };
-  next = next.filter(p => p.letter === candidate);
-  for (let i = 0; i < 5; i++) {
-    let pos = next[i].p;
-    console.log(pos + 1);
-    letter = await readLine();
-    firstLetter[letter]++;
-    positions.push({ p: pos + 1, letter });
-  }
-  candidate = ['A', 'B', 'C', 'D', 'E'].find(c => firstLetter[c] === 1);
-  sol = sol + candidate;
-  positions = positions.filter(p => p.letter === candidate);
-  console.log(positions[0].p + 1);
-  letter = await readLine();
-  sol = sol + ['A', 'B', 'C', 'D', 'E'].find(c => c !== letter && !sol.includes(c)) + letter;
   console.log(sol);
 }
