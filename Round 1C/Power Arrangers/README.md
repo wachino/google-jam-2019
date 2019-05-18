@@ -53,7 +53,7 @@ The missing set, and the order of the remaining sets, are chosen uniformly and i
 
 ## Testing Tool
 
-You can use this testing tool to test locally or on our servers. To test locally, you will need to run the tool in parallel with your code; you can use our [interactive runner](/Round%201B/Power%20Arrangers/interactive_runner.py) for that. For more information, read the [Interactive Problems section](https://codingcompetitions.withgoogle.com/codejam/faq#interactive-problems) of the FAQ.
+You can use this testing tool to test locally or on our servers. To test locally, you will need to run the tool in parallel with your code; you can use our [interactive runner](/Round%201C/Power%20Arrangers/interactive_runner.py) for that. For more information, read the [Interactive Problems section](https://codingcompetitions.withgoogle.com/codejam/faq#interactive-problems) of the FAQ.
 
 ## Local Testing Tool
 
@@ -61,7 +61,7 @@ To better facilitate local testing, we provide you the following script. Instruc
 
 If your code passes the testing tool but fails the real judge, please check the [Coding section](https://codingcompetitions.withgoogle.com/codejam/faq#coding) of our FAQ to make sure that you are using the same compiler as us.
 
-[Download testing_tool.py](/Round%201B/Power%20Arrangers/testing_tool.py)
+[Download testing_tool.py](/Round%201C/Power%20Arrangers/testing_tool.py)
 
 ## Sample Interaction
 

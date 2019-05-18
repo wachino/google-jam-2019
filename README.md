@@ -19,3 +19,7 @@ This project contains my solutions for [Google Code Jam competition 2019](https:
 ### Round 1C
 
 - [Problem statements and solutions](/Round%201C)
+
+## Round 2
+
+- [Problem statements and solutions](/Round%202)
