@@ -2,11 +2,11 @@
 
 Let w<sub>C</sub> be the atomic weight of Codium and w<sub>J</sub> be the atomic weight of Jamarium according to the rules given in the problem statement. Let ΔC<sub>i</sub> equal C<sub>i + 1</sub> - C<sub>i</sub> and ΔJ<sub>i</sub> equal J<sub>i + 1</sub>- J<sub>i</sub>, for all 1 ≤ i < **N**. As in our analysis for New Elements, Part 1, we have:
 
-```
--ΔC<sub>i</sub> / ΔJ<sub>i</sub> < w<sub>J</sub> / w<sub>C</sub>, if ΔJ<sub>i</sub> > 0.
-w<sub>J</sub> / w<sub>C</sub> < -ΔC<sub>i</sub> / ΔJ<sub>i</sub>, if ΔJ<sub>i</sub> < 0.
+<code>
+-ΔC<sub>i</sub> / ΔJ<sub>i</sub> < w<sub>J</sub> / w<sub>C</sub>, if ΔJ<sub>i</sub> > 0.<br>
+w<sub>J</sub> / w<sub>C</sub> < -ΔC<sub>i</sub> / ΔJ<sub>i</sub>, if ΔJ<sub>i</sub> < 0.<br>
 -ΔC<sub>i</sub> × w<sub>C</sub> < 0, if ΔJ<sub>i</sub> = 0.
-```
+</code>
 
 Therefore, we can get the lower bound and upper bound of w<sub>J</sub> / w<sub>C</sub> just by looking at consecutive indices. We can initially set the lower bound (let us represent it with the reduced fraction L<sub>N</sub> / L<sub>D</sub>) to be 0 and the upper bound (let us represent it with the reduced fraction U<sub>N</sub> / U<sub>D</sub>) to be ∞. We update either L<sub>N</sub> / L<sub>D</sub> or U<sub>N</sub> / U<sub>D</sub> for each pair of consecutive indexes, just as in our analysis from Part 1.
 
