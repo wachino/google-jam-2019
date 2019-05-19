@@ -2,7 +2,7 @@
 
 ## Solution code
 
-See [solution source code js](/Round%202/New%20Elements%3A%20Part%202/solution.js)
+See [solution source code c++](/Round%202/New%20Elements%3A%20Part%202/solution.cpp)
 
 ## Analysis
 
