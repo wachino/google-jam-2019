@@ -2,6 +2,10 @@
 
 ## Solution code
 
+See [solution source code c++ recursive version](/Round%202/Contransmutation/solution.cpp)
+
+See [solution source code c++ iterative version](/Round%202/Contransmutation/solution_iterative.cpp)
+
 See [solution source code js](/Round%202/Contransmutation/solution.js)
 
 ## Analysis
