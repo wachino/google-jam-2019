@@ -23,3 +23,7 @@ This project contains my solutions for [Google Code Jam competition 2019](https:
 ## Round 2
 
 - [Problem statements and solutions](/Round%202)
+
+## Round 3
+
+- [Problem statements and solutions](/Round%203)
