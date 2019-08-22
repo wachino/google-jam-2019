@@ -27,3 +27,7 @@ This project contains my solutions for [Google Code Jam competition 2019](https:
 ## Round 3
 
 - [Problem statements and solutions](/Round%203)
+
+## World Finals
+
+- [Problem statements and solutions](/World%20Finals)
