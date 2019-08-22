@@ -2,11 +2,11 @@
 
 ## Solution code
 
-See [solution source code c++](/World%20Finals/Wont%20Sum%3F%20Must%20Now/solution.cpp)
+See [solution source code c++](/World%20Finals/Wont%20sum%3F%20Must%20now/solution.cpp)
 
 ## Analysis
 
-You can see [solution analysis](/World%20Finals/Wont%20Sum%3F%20Must%20Now/analysis.md) extracted from Google webpage.
+You can see [solution analysis](/World%20Finals/Wont%20sum%3F%20Must%20now/analysis.md) extracted from Google webpage.
 
 ## Problem
 
